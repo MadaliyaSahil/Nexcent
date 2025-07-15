@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexcent - Website</title>
+    <link rel="stylesheet" href="main.css"/>
+
+    <script>
+      // Toggle mobile menu
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header
+      class="bg-white shadow-md drop-shadow-2xl shadow-gray-600 border border-black"
+    >
+      <div
+        class="container flex mx-auto justify-between items-center py-4 px-6"
+      >
+        <div class="flex">
+          <img src="img/Icon.svg " />
+          <label class="font-bold text-2xl">Nexcent</label>
+        </div>
+        <ul class="hidden md:flex space-x-6">
+          <li>Home</li>
+          <li>Service</li>
+          <li>Feature</li>
+          <li>Product</li>
+          <li>Testimonial</li>
+          <li>FAQ</li>
+        </ul>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="sm:hidden flex items-center">
+          <button id="menu-toggle" class="text-black focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="space-x-4 hidden sm:flex">
+          <a href="" class="text-green-500 self-center">Login</a>
+          <button class="rounded bg-green-500 text-white py-2 px-4">
+            Sign up
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="border-black shadow-md shadow-black bg-gray-100 border mt-11"
+    >
+      <div
+        class="container mx-auto mt-11 flex md:flex-row flex-col items-center justify-evenly"
+      >
+        <!-- left side -->
+        <div class="text-center md:text-left md:w-1/2">
+          <h1 class="font-semibold text-6xl mb-6">
+            Lessons and insights <br /><span class="text-green-600"
+              >from 8 years</span
+            >
+          </h1>
+          <p class="text-gray-600 mb-6">
+            Where to grow your business as a photographer: site or social media?
+          </p>
+          <button class="rounded bg-green-500 text-white py-4 px-8">
+            Rigister
+          </button>
+        </div>
+        <!-- right side -->
+        <div class="mt-7 md:mt-0">
+          <img src="img/Illustration.svg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Section -->
+    <section class="py-16">
+      <div class="container mx-auto text-center px-6">
+        <h1 class="font-bold text-3xl mb-3">Our Clients</h1>
+        <p class="mb-6 text-gray-600">
+          We have been working with some Fortune 500+ clients
+        </p>
+      </div>
+      <div class="flex justify-evenly flex-wrap gap-10">
+        <img src="img/icon2.svg" alt="" />
+        <img src="img/icon3.svg" alt="" />
+        <img src="img/icon4.svg" alt="" />
+        <img src="img/icon5.svg" alt="" />
+        <img src="img/icon6.svg" alt="" />
+        <img src="img/icon7.svg" alt="" />
+        <img src="img/icon8.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16">
+      <div class="container mx-auto text-center px-6">
+        <h1 class="font-bold text-3xl mb-4">
+          Manage your entire community<br />in a single system
+        </h1>
+        <p class="mb-6 text-gray-600">Who is Nextcent suitable for?</p>
+      </div>
+
+      <div
+        class="container mx-auto text-center grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6"
+      >
+        <!-- 1 -->
+        <div class="p-6 rounded bg-white border">
+          <div class="justify-center flex">
+            <img src="img/icon9.svg" class="" />
+          </div>
+          <h1 class="text-3xl font-semibold mb-2">
+            Membership <br />
+            Organisations
+          </h1>
+          <p class="mb-6 text-gray-600">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+
+        <!-- 2 -->
+        <div class="p-6 rounded bg-white border">
+          <div class="justify-center flex">
+            <img src="img/icon10.svg" class="" />
+          </div>
+          <h1 class="text-3xl font-semibold mb-2">
+            National<br />
+            Associations
+          </h1>
+          <p class="mb-6 text-gray-600">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+
+        <!-- 3 -->
+        <div class="p-6 rounded bg-white border">
+          <div class="justify-center flex">
+            <img src="img/icon11.svg" class="" />
+          </div>
+          <h1 class="text-3xl font-semibold mb-2">
+            Clubs And <br />
+            Groups
+          </h1>
+          <p class="mb-6 text-gray-600">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- unseen of spending -->
+    <section class="m-6 mx-auto">
+      <div
+        class="container mx-auto flex md:flex-row flex-col items-center justify-evenly p-6"
+      >
+        <!-- left side -->
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img src="img/Frame 35.svg" />
+        </div>
+        <!-- right side -->
+        <div class="flex flex-col w-full text-center md:w-1/2 md:text-left p-8">
+          <h1 class="font-semibold text-5xl mb-6">
+            The unseen of spending three years at Pixelgrade
+          </h1>
+          <p class="mb-6 text-gray-600 leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+            amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+            Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+            tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+            Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+            elementum pulvinar odio.
+          </p>
+          <button
+            class="rounded bg-green-500 text-white py-4 px-8 w-fit mx-auto md:mx-0"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- all data -->
+    <section class="bg-gray-100">
+      <div
+        class="container mx-auto flex md:flex-row flex-col justify-between p-6"
+      >
+        <!-- left side -->
+        <div class="flex flex-col justify-center">
+          <h1 class="font-semibold text-5xl mb-3">
+            Helping a local <br /><span class="text-green-600"
+              >business reinvent itself</span
+            >
+          </h1>
+          <p>We reached here with our hard work and dedication</p>
+        </div>
+        <!-- right side -->
+        <div>
+          <div
+            class="container mx-auto text-center justify-end grid md:grid-cols-2 grid-cols-1 gap-6"
+          >
+            <!-- 1 -->
+            <div class="flex p-5">
+              <div>
+                <img src="img/icon12.png" alt="" />
+              </div>
+              <div>
+                <div class="flex flex-col ps-3 items-start">
+                  <label class="font-bold">2,245,341</label>
+                  <label for="">Members</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="flex p-5">
+              <div>
+                <img src="img/icon13.png" alt="" />
+              </div>
+              <div>
+                <div class="flex flex-col ps-3 items-start">
+                  <label class="font-bold">46,328</label>
+                  <label for="">Clubs</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="flex p-5">
+              <div>
+                <img src="img/icon14.svg" alt="" />
+              </div>
+              <div>
+                <div class="flex flex-col ps-3 items-start">
+                  <label class="font-bold">828,867</label>
+                  <label for="">Event Bookings</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="flex p-5">
+              <div>
+                <img src="img/icon15.svg" alt="" />
+              </div>
+              <div>
+                <div class="flex flex-col ps-3 items-start">
+                  <label class="font-bold">1,926,436</label>
+                  <label for="">Payments</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- how to design -->
+    <section class="m-6 mx-auto">
+      <div
+        class="container mx-auto flex md:flex-row flex-col items-center justify-center p-6"
+      >
+        <!-- left side -->
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img src="img/pana.svg" />
+        </div>
+        <!-- right side -->
+        <div class="flex flex-col w-full text-center md:w-1/2 md:text-left p-8">
+          <h1 class="font-semibold text-5xl mb-6">
+            How to design your site footer like we did
+          </h1>
+          <p class="mb-6 text-gray-600 leading-relaxed">
+            Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
+            augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque
+            elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
+            habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi
+            facilisis finibus. In euismod augue vitae nisi ultricies, non
+            aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus
+            efficitur quis massa. Praesent felis est, finibus et nisi ac,
+            hendrerit venenatis libero. Donec consectetur faucibus ipsum id
+            gravida.
+          </p>
+          <button
+            class="rounded bg-green-500 text-white py-4 px-8 w-fit mx-auto md:mx-0"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- how to design 2.O -->
+    <section class="m-6 mx-auto bg-gray-100">
+      <div
+        class="container mx-auto flex md:flex-row flex-col items-center justify-center p-6"
+      >
+        <!-- left side -->
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img src="img/pana2.svg" />
+        </div>
+        <!-- right side -->
+        <div class="flex flex-col w-full text-center md:w-1/2 md:text-left p-8">
+          <p class="mb-6 text-gray-600 leading-relaxed">
+            Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+            lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
+            enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+            enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit
+            at ligula molestie, nec molestie mi blandit. Suspendisse cursus
+            tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse
+            eget lorem eu turpis vestibulum pretium. Suspendisse potenti.
+            Quisque malesuada enim sapien, vitae placerat ante feugiat eget.
+            Quisque vulputate odio neque, eget efficitur libero condimentum id.
+            Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+          </p>
+          <h3 class="font-semibold text-green-500 text-5xl mb-6">Tim Smith</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            British Dragon Boat Racing Association
+          </p>
+          <div class="flex flex-col md:flex-row">
+            <div class="flex justify-evenly flex-wrap gap-4">
+              <img src="img/icon2.svg" alt="" />
+              <img src="img/icon3.svg" alt="" />
+              <img src="img/icon4.svg" alt="" />
+              <img src="img/icon5.svg" alt="" />
+              <img src="img/icon6.svg" alt="" />
+              <img src="img/icon7.svg" alt="" />
+              <img src="img/icon8.svg" alt="" />
+            </div>
+            <div class="ml-3 mt-3">
+              <a href="" class="text-green-400 text-xl font-bold">
+                Meet all customers</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- new marketing -->
+    <section class="py-16">
+      <div class="container mx-auto text-center px-6">
+        <h3 class="font-bold text-3xl mb-4">Caring is the new marketing</h3>
+        <p
+          class="mb-6 text-gray-600 leading-relaxed text-center md:w-[600px] w-1/2 mx-auto"
+        >
+          The Nexcent blog is the best place to read about the latest membership
+          insights, trends and more. See who's joining the community, read about
+          how our community are increasing their membership income and lot's
+          more.​
+        </p>
+      </div>
+
+      <!-- <div
+        class="container mx-auto text-center grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6"
+      >
+        
+        <div class="p-6 rounded">
+          <div class="justify-center flex">
+            <img src="img/pana3.svg" class="" />
+          </div>
+          <h1 class="text-3xl font-semibold mb-2">
+            Membership <br />
+            Organisations
+          </h1>
+          <p class="mb-6 text-gray-600">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+      
+        <div class="p-6 rounded">
+          <div class="justify-center flex">
+            <img src="img/pana4.svg" class="" />
+          </div>
+          <h1 class="text-3xl font-semibold mb-2">
+            Membership <br />
+            Organisations
+          </h1>
+          <p class="mb-6 text-gray-600">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+        
+        <div class="p-6 rounded">
+          <div class="justify-center flex">
+            <img src="img/pana5.svg" class="" />
+          </div>
+          <h1 class="text-3xl font-semibold mb-2">
+            Membership <br />
+            Organisations
+          </h1>
+          <p class="mb-6 text-gray-600">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+      </div> -->
+
+      <div class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="img/pana3.svg"
+              alt="Card Image"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">
+                Creating Streamlined Safeguarding Processes with OneRen
+              </h3>
+              <a href="#" class="text-green-500 mt-2 inline-block"
+                >Readmore →</a
+              >
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="img/pana4.svg"
+              alt="Card Image"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">
+                What are your safeguarding responsibilities and how can you
+                manage them?
+              </h3>
+              <a href="#" class="text-green-500 mt-2 inline-block"
+                >Readmore →</a
+              >
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src="img/pana5.svg"
+              alt="Card Image"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">
+                Revamping the Membership Model with Triathlon Australia
+              </h3>
+              <a href="#" class="text-green-500 mt-2 inline-block"
+                >Readmore →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- demo -->
+    <section>
+      <div class="flex flex-col items-center bg-slate-100 p-8">
+        <h1 class="font-semibold text-6xl mb-20 text-center">
+          Pellentesque suscipit <br />
+          fringilla libero eu.
+        </h1>
+        <button
+          class="rounded bg-green-500 text-white py-4 px-8 w-fit mx-auto md:mx-0"
+        >
+          Learn More
+        </button>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section>
+      <div
+        class="bg-slate-500 mx-2 flex md:flex-row flex-col pt-8 mb-10 items-center justify-evenly text-white"
+      >
+        <!-- left side -->
+        <div class="p-5">
+          <div class="flex mb-5">
+            <img src="img/Icon.svg " />
+            <label class="font-bold text-3xl">Nexcent</label>
+          </div>
+          <p class="mb-3">Copyright © 2020 Nexcent ltd.</p>
+          <p class="mb-5">All rights reserved</p>
+          <div>
+            <div class="flex justify-evenly flex-wrap gap-1">
+              <img src="img/icon2.svg" alt="" />
+              <img src="img/icon3.svg" alt="" />
+              <img src="img/icon4.svg" alt="" />
+              <img src="img/icon5.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="flex md:flex-row flex-col justify-evenly gap-10">
+          <!-- company -->
+          <div class="flex flex-col">
+            <a href="" class="font-bold text-2xl mb-5">Company</a>
+            <a href="" class="mb-2">About us</a>
+            <a href="" class="mb-2">Blog</a>
+            <a href="" class="mb-2">Contact us</a>
+            <a href="" class="mb-2">Pricing</a>
+            <a href="" class="mb-2">Testimonials</a>
+          </div>
+          <!-- support -->
+          <div class="flex flex-col">
+            <a href="" class="font-bold text-2xl mb-5">Support</a>
+            <a href="" class="mb-2">Help center</a>
+            <a href="" class="mb-2">Terms of service</a>
+            <a href="" class="mb-2">Legal</a>
+            <a href="" class="mb-2">Privacy policy</a>
+            <a href="" class="mb-2">Status</a>
+          </div>
+          <!-- last -->
+          <div class="flex flex-col">
+            <a href="" class="font-bold text-2xl mb-5">Stay up to date</a>
+            <!-- <input type="text" class="" placeholder="your email address" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
